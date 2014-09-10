@@ -1,0 +1,44 @@
+{
+  "name": "cp/terms-demo",
+  "dependencies": {
+    "bootstrap": "~3.1",
+    "datatables": "~1.10",
+    "datatables-plugins": "*",
+    "font-awesome": "~4.1",
+    "jquery": "~1.11",
+    "modernizr": "~2.7",
+    "respond": "~1.4"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/css/bootstrap.css",
+        "./dist/css/bootstrap.min.css",
+        "./dist/css/bootstrap.css.map",
+        "./dist/js/bootstrap.js",
+        "./dist/js/bootstrap.min.js"
+      ]
+    },
+    "datatables-plugins": {
+      "main": [
+        "integration/bootstrap/3/dataTables.bootstrap.css",
+        "integration/bootstrap/3/dataTables.bootstrap.js",
+        "integration/bootstrap/images/sort_asc.png",
+        "integration/bootstrap/images/sort_asc_disabled.png",
+        "integration/bootstrap/images/sort_both.png",
+        "integration/bootstrap/images/sort_desc.png",
+        "integration/bootstrap/images/sort_desc_disabled.png"
+      ]
+    },
+    "modernizr": {
+      "main": [
+        "modernizr.js"
+      ]
+    },
+    "respond": {
+      "main": [
+        "dest/respond.min.js"
+      ]
+    }
+  }
+}

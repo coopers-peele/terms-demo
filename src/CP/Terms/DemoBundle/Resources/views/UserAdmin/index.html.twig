@@ -1,0 +1,55 @@
+{% extends "::admin.html.twig" %}
+
+{% trans_default_domain "cpterms_demo" %}
+
+
+{% block head_style %}
+	{{ parent() }}
+	{% include "CPTermsDemoBundle:UserAdmin:users_head_style.html.twig" %}
+{% endblock %}
+
+{% block head_script %}
+	{{ parent() }}
+	{% include "CPTermsDemoBundle:UserAdmin:users_head_script.html.twig" %}
+{% endblock %}
+
+{% block body_class %}users{% endblock %}
+
+{% block page_title %}{% trans %}user.users.page_title{% endtrans %}{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md-9">
+		<table class="table table-condensed table-hover" id="_users">
+			<thead>
+				<tr>
+					<th class="username">{% trans %}user.users.username{% endtrans %}</th>
+					<th class="datetime">{% trans %}user.users.last_login{% endtrans %}</th>
+					<th class="tos">{% trans %}user.users.tos{% endtrans %}</th>
+					<th class="datetime">{% trans %}user.users.agreed_on{% endtrans %}</th>
+					<th class="actions"><i class="fa fa-cog"></i></th>
+				</tr>
+				<tr class="filters">
+					<th>{{ form_widget(form.username) }}</th>
+					<th></th>
+					<th>{{ form_widget(form.tos) }}</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-md-3 user_info">
+		<h4>{% trans %}user.info.title{% endtrans %}</h4>
+		<div class="loading"><i class="fa fa-spin fa-refresh fa-3x"></i></div>
+		<div class="content"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block foot_script %}
+	{{ parent() }}
+	{% include "CPTermsDemoBundle:UserAdmin:users_foot_script.html.twig" %}
+{% endblock %}

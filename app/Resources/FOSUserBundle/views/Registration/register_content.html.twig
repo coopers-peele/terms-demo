@@ -1,0 +1,19 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="row">
+	<div class="col-lg-4 col-lg-offset-4">
+		<form class="form fos_user_registration_register" action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="post">
+			<div class="form-group">
+				<h2 class="form-signup-heading">
+					<label class="control-label">{{ 'security.registration.heading'|trans }}</label>
+				</h2>
+			</div>
+			<div class="form-group">
+				{{ form_widget(form) }}
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block" id="_submit" name="_submit">{{ 'security.registration.submit'|trans }}</button>
+			</div>
+		</form>
+	</div>
+</div>

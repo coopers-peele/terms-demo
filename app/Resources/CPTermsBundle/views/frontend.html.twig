@@ -1,0 +1,32 @@
+{% extends "::frontend.html.twig" %}
+
+{% block head_style %}
+	{{ parent() }}
+	{% stylesheets
+		'bundles/cpterms/css/cpterms.css'
+	%}
+		<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+	{% endstylesheets %}
+	{% block cp_terms_head_style %}{% endblock %}
+{% endblock head_style %}
+
+{% block main %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-3 col-sm-6">
+			{% block page_nav %}{% endblock %}
+			<h1>{% block page_title %}{% block cp_terms_page_title %}{% endblock %}{% endblock %}</h1>
+
+			{% block flash -%}
+				{% include "CPTermsDemoBundle::flash.html.twig" %}
+			{%- endblock %}
+
+			<div class="content">
+				{% block content %}
+					{% block cp_terms_content %}{% endblock %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

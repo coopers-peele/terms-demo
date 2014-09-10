@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="cp/terms-demo" default="build" basedir=".">
+    <property name="basedir" value="${project.basedir}"/>
+    <property name="passthru" value="true"/>
+    <property name="os" value="${os.name}"/>
+    <property name="gitpath" value="/usr/bin/git" />
+    <property name="phppath" value="/usr/local/bin/php" />
+    <property file="${user.home}/.phing/build.properties" override="true" />
+
+    <target name="build" depends="composer-install, composer-dump-autoload, build-core, assets-dump, ownership, permissions" />
+
+    <target name="build-core" depends="clear-cache, propel-build-model, assets" />
+
+    <target name="build-all" depends="composer-self-update, composer-update, build-core, propel-migrate" />
+
+    <target name="build-dev" depends="git-log">
+        <if>
+            <equals arg1="${gitlog}" arg2="" />
+            <then>
+                <echo message="No changes detected in remote repo" />
+            </then>
+            <else>
+                <phingcall target="build-dev-core" />
+            </else>
+        </if>
+    </target>
+
+    <target name="build-dev-core" depends="git-pull, composer-install, build-core, propel-migrate, ownership, permissions" />
+
+    <target name="update-version">
+        <version releasetype="Bugfix" file="bin/version.txt" property="version.number" />
+    </target>
+
+    <target name="git-pull">
+        <gitpull repository="${basedir}" gitpath="${gitpath}" />
+    </target>
+
+    <target name="composer-self-update">
+        <exec command="php -f bin/composer.phar self-update" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <target name="composer-dump-autoload">
+        <exec command="php -f bin/composer.phar dump-autoload --optimize" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <target name="composer-install">
+        <exec command="php -f bin/composer.phar install" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <target name="composer-update">
+        <exec command="php -f bin/composer.phar update" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <!-- clear cache -->
+    <target name="clear-cache">
+        <exec command="php app/console cache:clear --no-warmup --env=dev" dir="${basedir}" passthru="${passthru}" />
+        <exec command="php app/console cache:clear --no-warmup --env=prod" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <!-- change project ownsership -->
+    <target name="ownership">
+        <exec command="chown -R www-data:www-data ." dir="${basedir}" />
+    </target>
+
+    <!-- change project's owner to www-data -->
+    <target name="permissions">
+        <exec command="chmod -R 777 app/cache" dir="${basedir}" />
+        <exec command="chmod -R 777 app/logs" dir="${basedir}" />
+    </target>
+
+    <!-- build models -->
+    <target name="propel-build-model">
+        <exec command="php app/console propel:model:build" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <!-- apply migrations -->
+    <target name="propel-migrate">
+        <exec command="php app/console propel:migration:migrate" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <!-- install assets -->
+    <target name="assets">
+        <if>
+            <contains string="${os}" substring="WINNT"/>
+            <then>
+                <exec command="php app/console assets:install" dir="${basedir}" passthru="${passthru}" />
+            </then>
+            <else>
+                <exec command="php app/console assets:install --symlink" dir="${basedir}" passthru="${passthru}" />
+            </else>
+        </if>
+    </target>
+
+    <!-- dump prod assets -->
+    <target name="assets-dump">
+        <exec command="php app/console assetic:dump --env=prod --no-debug" dir="${basedir}" passthru="${passthru}" />
+    </target>
+
+    <target name="git-fetch">
+        <gitfetch repository="${basedir}" gitpath="${gitpath}" />
+    </target>
+
+    <target name="git-log" depends="git-fetch">
+        <gitlog repository="${basedir}" format="oneline" outputProperty="gitlog" paths="HEAD..origin/develop" gitpath="${gitpath}" />
+    </target>
+</project>

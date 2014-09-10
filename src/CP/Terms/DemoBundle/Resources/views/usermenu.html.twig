@@ -1,0 +1,15 @@
+{% trans_default_domain "cpterms_demo" %}
+
+<ul class="nav navbar-nav navbar-right">
+	{% if is_granted('ROLE_USER') %}
+		<li class="navbar-text">{% trans with { '%user%': app.user.username } %}menu.welcome.user{% endtrans %}</li>
+		{% if is_granted('ROLE_ADMIN') %}
+			<li><a href="{{ path('admin_users') }}">{% trans %}admin.menu.users{% endtrans %}</a></li>
+			<li><a href="{{ path('cp_terms_admin') }}">{% trans %}admin.menu.terms{% endtrans %}</a></li>
+		{% endif %}
+		<li><a href="{{ path('fos_user_security_logout') }}">{% trans %}menu.logout{% endtrans %}</a></li>
+	{% else %}
+		<li><a href="{{ path('fos_user_security_login') }}">{% trans %}menu.signin{% endtrans %}</a></li>
+		<li><a href="{{ path('fos_user_registration_register') }}">{% trans %}menu.signup{% endtrans %}</a></li>
+	{% endif %}
+</ul>

@@ -1,0 +1,30 @@
+{% trans_default_domain "cpterms_demo" %}
+
+{% set datetime_format = 'd/m/y H:i' %}
+
+<table class="table table-condensed user">
+	<tbody>
+		<tr>
+			<th> {% trans %}user.info.username{% endtrans %}</th>
+			<td>{{ user.username }}</td>
+		</tr>
+		<tr>
+			<th> {% trans %}user.info.last_login{% endtrans %}</th>
+			<td>{{ user.lastLogin|date(datetime_format) }}</td>
+		</tr>
+		<tr>
+			<th colspan="2">
+				<span class="pull-right">
+					<i class="fa {{ user.hasAgreedToLatestTerms ? 'fa-check agreed' : 'fa-times notagreed' }}"></i>
+				</span>
+				{% trans %}user.info.tos{% endtrans %}
+			</th>
+		</tr>
+		{% for terms in user.agreedTerms %}
+			 <tr class="tos {% if terms.isLatest %}latest{% endif %}">
+				<td>{{ terms.version }}</td>
+				<td>{{ terms.getAgreedAt|date(datetime_format) }}</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>

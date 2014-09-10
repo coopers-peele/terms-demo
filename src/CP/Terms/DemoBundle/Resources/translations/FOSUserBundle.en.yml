@@ -1,0 +1,8 @@
+security:
+    login:
+        heading:        Login
+        username:       Username
+        password:       Password
+    registration:
+        heading:        Sign Up
+        submit:         Sign Up

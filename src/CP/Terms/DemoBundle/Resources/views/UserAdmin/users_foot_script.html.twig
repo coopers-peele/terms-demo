@@ -1,0 +1,17 @@
+
+{% javascripts
+	'bundles/cptermsdemo/vendor/datatables/media/js/jquery.dataTables.min.js'
+	'bundles/cptermsdemo/vendor/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js'
+	'bundles/cptermsdemo/js/users.js'
+%}
+	<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+<script>
+cpterms_user_admin.users = {
+	datatables: {
+		ajax: {
+			url: "{{ path('admin_users_list') }}"
+		}
+	}
+}
+</script>

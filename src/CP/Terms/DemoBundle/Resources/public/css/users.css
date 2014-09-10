@@ -1,0 +1,48 @@
+.users .loading {
+	display: none;
+	text-align: center;
+}
+
+.users table.table {
+	width: 100%;
+}
+
+.users table.table th.tos {
+	width: 4em;
+}
+
+.users table.table th.actions {
+	width: 4em;
+}
+
+.users table.table tbody tr.active td {
+	color: #535353!important;
+	background-color: #FFF6BF!important;
+}
+
+.users table.user tbody th {
+	width: 6em;
+	padding-left: 0;
+}
+
+.users .agreed {
+	color: #3c763d;
+}
+
+.users tr.latest th,
+.users tr.latest td {
+	color: #3c763d;
+	background-color: #dff0d8;
+}
+
+.users .notagreed {
+	color: #a94442;
+}
+
+.users .user_info table.table {
+	display: table;
+}
+
+.users table.table i.fa.fa-cog {
+	color: black;
+}

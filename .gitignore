@@ -1,0 +1,12 @@
+**/bower_components
+**/node_modules
+**/Model/om/*
+**/Model/map/*
+app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+/vendor/
+/web/bundles/
+/web/css/*
+/web/js

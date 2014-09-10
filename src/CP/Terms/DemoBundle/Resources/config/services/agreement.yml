@@ -1,0 +1,7 @@
+services:
+    cp_terms_demo.agreement.listener:
+        class: 'CP\Terms\DemoBundle\EventListener\CheckAgreementListener'
+        arguments: [@security.context, @security.http_utils]
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onFilterController }
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }

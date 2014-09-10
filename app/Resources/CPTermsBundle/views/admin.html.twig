@@ -1,0 +1,38 @@
+{% extends "::admin.html.twig" %}
+
+{% block head_style %}
+	{{ parent() }}
+	{% stylesheets
+		'bundles/cpterms/css/admin.css'
+	%}
+		<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+	{% endstylesheets %}
+	{% block cp_terms_head_style %}{% endblock %}
+{% endblock head_style %}
+
+{% block head_script %}
+	{% block cp_terms_head_script %}
+	<script>
+	var cpterms = {
+		locale: "{{ app.request.locale }}"
+	};
+	</script>
+	{% endblock %}
+{% endblock %}
+
+{% block page_title %}{% block cp_terms_page_title %}{% endblock %}{% endblock %}
+
+{% block page_nav %}{% block cp_terms_page_nav %}{% endblock %}{% endblock %}
+
+{% block body_class -%}
+	{% block cp_terms_page_class %}{% endblock %}
+{% endblock %}
+
+{% block content %}
+	{% block cp_terms_content %}{% endblock %}
+{% endblock %}
+
+{% block foot_script %}
+	{{ parent() }}
+	{% block cp_terms_foot_script %}{% endblock %}
+{% endblock foot_script %}

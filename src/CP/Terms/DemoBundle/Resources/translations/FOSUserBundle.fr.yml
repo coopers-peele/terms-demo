@@ -1,0 +1,8 @@
+security:
+    login:
+        heading:        Connexion
+        username:       Identifiant
+        password:       Mot de passe
+    registration:
+        heading:        Inscription
+        submit:         Inscription

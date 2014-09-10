@@ -1,0 +1,43 @@
+brand: CPTerms Demo
+
+footer:
+    tos:            Conditions d'utilisation
+
+menu:
+    admin:
+        terms:      Conditions d'utilisation
+        title:      Admin
+        users:		Utilisateurs
+    terms:          Conditions d'utilisation
+    home:           Accueil
+    signin:         Connexion
+    signup:         Inscription
+    logout:         Déconnexion
+    welcome:
+        user:       Bienvenue %user%
+
+meta:
+    title:          CPTermsBundle - Application de démonstration
+
+admin:
+    menu:
+        home:       Accueil
+        terms:      Conditions
+        users:      Utilisateurs
+    meta:
+        title:      Démo CPTermsBundle - Pages d'administration
+
+user:
+    users:
+        actions:
+            show:       Afficher
+        last_login:     Dernière conn.
+        page_title:     Utilisateurs
+        username:       Identifiant
+        tos:            CGU
+        agreed_on:      Approuvées le
+    info:
+        last_login:     Dernière connexion
+        title:          Info utilisateur
+        tos:            Conditions d'utilisation
+        username:       Identifiant

@@ -1,0 +1,43 @@
+brand: CPTermsBundle Demo
+
+footer:
+    tos:            Terms of service
+
+menu:
+    admin:
+        terms:      Terms of service
+        title:      Admin
+        users:		Users
+    terms:          Terms of service
+    home:           Home
+    signin:         Sign in
+    signup:         Sign up
+    logout:         Log out
+    welcome:
+        user:       Welcome %user%
+
+meta:
+    title:          CPTermsBundle - Demo application
+
+admin:
+    menu:
+        home:       Home
+        terms:      Terms
+        users:      Users
+    meta:
+        title:      CPTermsBundle - Demo admin pages
+
+user:
+    users:
+        actions:
+            show:       Show user
+        last_login:     Last login
+        page_title:     Users
+        username:       Username
+        tos:            TOS
+        agreed_on:      Agreed On
+    info:
+        last_login:     Last login
+        title:          User info
+        tos:            Terms agreed
+        username:       Username
