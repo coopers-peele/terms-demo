@@ -19,7 +19,7 @@ git clone https://github.com/coopers-peele/terms-demo.git
 Build the app. The `bin` dir includes a phing build script with the following targets:
 
 * **build**: "production-like" build, with updates of composer packages.
-* **build-all**: "development" build, where composer will udpate all requirements to the latest alloed versions.
+* **build-all**: "development" build, where composer will udpate all requirements to the latest allowed versions.
 
 ``` 
 cd terms-demo
@@ -29,7 +29,7 @@ phing -f bin/build.xml [build|build-all]
 Create the database.
 
 ```
-php app/console propel:sal:build
+php app/console propel:sql:build
 php app/console propel:sql:insert --force
 ```
 
