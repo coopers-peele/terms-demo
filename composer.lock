@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dd687dce583759f1126b200e342bbd90",
+    "hash": "c3fbbb2bc01ddfa657eb8bbf80816c80",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1861,8 +1861,12 @@
             "time": "2013-06-20 06:54:39"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
@@ -1872,5 +1876,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
