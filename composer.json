@@ -2,7 +2,7 @@
     "name": "cp/cp-terms-demo",
     "license": "MIT",
     "type": "project",
-    "description": "Demo applicatin for the CPTermsBundle",
+    "description": "Demo Symfony2 application for the CPTermsBundle",
     "autoload": {
         "psr-0": { "": "src/" }
     },
