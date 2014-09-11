@@ -13,20 +13,6 @@
 
     <target name="build-all" depends="composer-self-update, composer-update, build-core, propel-migrate" />
 
-    <target name="build-dev" depends="git-log">
-        <if>
-            <equals arg1="${gitlog}" arg2="" />
-            <then>
-                <echo message="No changes detected in remote repo" />
-            </then>
-            <else>
-                <phingcall target="build-dev-core" />
-            </else>
-        </if>
-    </target>
-
-    <target name="build-dev-core" depends="git-pull, composer-install, build-core, propel-migrate, ownership, permissions" />
-
     <target name="update-version">
         <version releasetype="Bugfix" file="bin/version.txt" property="version.number" />
     </target>
@@ -94,13 +80,5 @@
     <!-- dump prod assets -->
     <target name="assets-dump">
         <exec command="php app/console assetic:dump --env=prod --no-debug" dir="${basedir}" passthru="${passthru}" />
-    </target>
-
-    <target name="git-fetch">
-        <gitfetch repository="${basedir}" gitpath="${gitpath}" />
-    </target>
-
-    <target name="git-log" depends="git-fetch">
-        <gitlog repository="${basedir}" format="oneline" outputProperty="gitlog" paths="HEAD..origin/develop" gitpath="${gitpath}" />
     </target>
 </project>
