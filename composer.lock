@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dd687dce583759f1126b200e342bbd90",
+    "hash": "f711f5fff6746ecb242f15810666858e",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -112,12 +112,12 @@
         },
         {
             "name": "cp/terms-bundle",
-            "version": "dev-master",
+            "version": "0.9.4",
             "target-dir": "CP/Bundle/TermsBundle",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:terms/terms-bundle",
-                "reference": "139b07bdab157b92e41effd079f1d0400b9f69cd"
+                "reference": "484c6251d82a51a9d048e3a3a61eddd7213d37fe"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -1861,16 +1861,21 @@
             "time": "2013-06-20 06:54:39"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "friendsofsymfony/user-bundle": 20,
-        "cp/terms-bundle": 20
+        "friendsofsymfony/user-bundle": 20
     },
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
