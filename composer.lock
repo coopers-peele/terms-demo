@@ -117,7 +117,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:terms/terms-bundle",
-                "reference": "30b63ae589f2b11fa742b872dfa370c6c23e7604"
+                "reference": "a069c8d18a7cddbf035514b4744016ff6fd0f895"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -160,7 +160,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-09-11 11:20:03"
+            "time": "2014-09-11 12:29:54"
         },
         {
             "name": "doctrine/annotations",
