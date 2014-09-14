@@ -112,12 +112,12 @@
         },
         {
             "name": "cp/terms-bundle",
-            "version": "0.9.4",
+            "version": "0.9.8",
             "target-dir": "CP/Bundle/TermsBundle",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:terms/terms-bundle",
-                "reference": "484c6251d82a51a9d048e3a3a61eddd7213d37fe"
+                "reference": "e5b95f5dfa12d351c37b6854e84b993a560a9c9f"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -151,7 +151,7 @@
                 }
             ],
             "description": "Symfony bundle to manage your app's terms of service",
-            "homepage": "http://gitlab.united-asian.com/terms/CPTermsBundle",
+            "homepage": "https://github.com/coopers-peele/CPTermsBundle",
             "keywords": [
                 "bundle",
                 "symfony",
@@ -160,7 +160,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-09-10 16:14:17"
+            "time": "2014-09-14 09:57:07"
         },
         {
             "name": "doctrine/annotations",
@@ -626,12 +626,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "e009ce7e3d42ed0578544ad65ece869e2a7c9734"
+                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e009ce7e3d42ed0578544ad65ece869e2a7c9734",
-                "reference": "e009ce7e3d42ed0578544ad65ece869e2a7c9734",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/7001669bccb3fcedfc1c5411ecb2157715e92dd6",
+                "reference": "7001669bccb3fcedfc1c5411ecb2157715e92dd6",
                 "shasum": ""
             },
             "require": {
@@ -685,7 +685,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-08 21:45:10"
+            "time": "2014-09-12 11:18:14"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1861,12 +1861,8 @@
             "time": "2013-06-20 06:54:39"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20
@@ -1875,7 +1871,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
