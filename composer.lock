@@ -117,7 +117,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:terms/terms-bundle",
-                "reference": "30b63ae589f2b11fa742b872dfa370c6c23e7604"
+                "reference": "49b341253dd1779542e81feb5583cf129ec79034"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -151,7 +151,7 @@
                 }
             ],
             "description": "Symfony bundle to manage your app's terms of service",
-            "homepage": "http://gitlab.united-asian.com/terms/CPTermsBundle",
+            "homepage": "https://github.com/coopers-peele/CPTermsBundle",
             "keywords": [
                 "bundle",
                 "symfony",
@@ -160,7 +160,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-09-11 11:20:03"
+            "time": "2014-09-14 09:57:07"
         },
         {
             "name": "doctrine/annotations",
@@ -1861,8 +1861,12 @@
             "time": "2013-06-20 06:54:39"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
@@ -1872,5 +1876,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
