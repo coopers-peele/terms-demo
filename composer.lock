@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bfa31c33f89984cf1a142bb98b5a9b7f",
+    "hash": "c87d851c972311d6bc40cfb24af77810",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -112,12 +112,12 @@
         },
         {
             "name": "cp/terms-bundle",
-            "version": "dev-jquery-sort",
+            "version": "dev-jquery-sortable",
             "target-dir": "CP/Bundle/TermsBundle",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:terms/terms-bundle",
-                "reference": "0c6600018d3a3fd756c414f2e54ab20723cc924a"
+                "reference": "776c7bbe0e1f42d65893436d41657641d5463275"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -160,7 +160,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-09-16 08:18:11"
+            "time": "2014-09-17 03:42:36"
         },
         {
             "name": "doctrine/annotations",
