@@ -6,13 +6,6 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
-
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://satis.united-asian.com/terms"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "~2.4",
@@ -28,8 +21,7 @@
         "willdurand/propel-typehintable-behavior": "1.0.*",
         "friendsofsymfony/user-bundle": "2.0.*@dev",
         "lunetics/locale-bundle": "2.2.*",
-        "cp/terms-bundle": "*"
-
+        "cp/terms-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
