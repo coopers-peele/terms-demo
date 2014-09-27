@@ -6,6 +6,12 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
+     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/opichon/PropelBundle.git"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "~2.4",
@@ -17,11 +23,11 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "propel/propel-bundle": "~1.4",
+        "propel/propel-bundle": "~1.4@dev",
         "willdurand/propel-typehintable-behavior": "1.0.*",
         "friendsofsymfony/user-bundle": "2.0.*@dev",
         "lunetics/locale-bundle": "2.2.*",
-        "cp/terms-bundle": "dev-master"
+        "cp/terms-bundle": "dev-develop"
     },
     "scripts": {
         "post-install-cmd": [

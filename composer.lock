@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e69bcf5a87571348a03c2c2107bbcc87",
+    "hash": "9fd42cf239282eda743727cdc922ef0d",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -112,17 +112,16 @@
         },
         {
             "name": "cp/terms-bundle",
-            "version": "dev-master",
-            "target-dir": "CP/Bundle/TermsBundle",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coopers-peele/CPTermsBundle.git",
-                "reference": "8cde3e6318e08ad8a817dfa7c2971a8b4662a1de"
+                "reference": "a917f2324481b451b3cb05dd7735ac15b1192ab4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/8cde3e6318e08ad8a817dfa7c2971a8b4662a1de",
-                "reference": "8cde3e6318e08ad8a817dfa7c2971a8b4662a1de",
+                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/a917f2324481b451b3cb05dd7735ac15b1192ab4",
+                "reference": "a917f2324481b451b3cb05dd7735ac15b1192ab4",
                 "shasum": ""
             },
             "require": {
@@ -142,8 +141,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "CP\\Bundle\\TermsBundle": ""
+                "psr-4": {
+                    "CP\\Bundle\\TermsBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -167,20 +166,20 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-09-16 11:57:51"
+            "time": "2014-09-27 05:39:44"
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd"
+                "reference": "6a6bec0670bb6e71a263b08bc1b98ea242928633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
-                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/6a6bec0670bb6e71a263b08bc1b98ea242928633",
+                "reference": "6a6bec0670bb6e71a263b08bc1b98ea242928633",
                 "shasum": ""
             },
             "require": {
@@ -208,17 +207,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -227,10 +215,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Docblock Annotations Parser",
@@ -240,7 +234,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-07-06 15:52:21"
+            "time": "2014-09-25 16:45:30"
         },
         {
             "name": "doctrine/cache",
@@ -624,29 +618,28 @@
         {
             "name": "friendsofsymfony/user-bundle",
             "version": "dev-master",
-            "target-dir": "FOS/UserBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "349b637b2a5f6ec1e871d17b79e01b072fbb081c"
+                "reference": "56bd660f077dd6b8038ebe613551446f3c0d758b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/349b637b2a5f6ec1e871d17b79e01b072fbb081c",
-                "reference": "349b637b2a5f6ec1e871d17b79e01b072fbb081c",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/56bd660f077dd6b8038ebe613551446f3c0d758b",
+                "reference": "56bd660f077dd6b8038ebe613551446f3c0d758b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "symfony/form": "~2.1",
-                "symfony/framework-bundle": "~2.1",
-                "symfony/security-bundle": "~2.1"
+                "symfony/form": "~2.3",
+                "symfony/framework-bundle": "~2.3",
+                "symfony/security-bundle": "~2.3"
             },
             "require-dev": {
                 "doctrine/doctrine-bundle": "*",
                 "swiftmailer/swiftmailer": ">=4.3, <6.0",
-                "symfony/validator": "~2.1",
-                "symfony/yaml": "~2.1",
+                "symfony/validator": "~2.3",
+                "symfony/yaml": "~2.3",
                 "twig/twig": "~1.5",
                 "willdurand/propel-typehintable-behavior": "dev-master"
             },
@@ -660,8 +653,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "FOS\\UserBundle": ""
+                "psr-4": {
+                    "FOS\\UserBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -687,7 +680,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-09-20 00:36:25"
+            "time": "2014-09-26 22:23:40"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1021,17 +1014,17 @@
         },
         {
             "name": "propel/propel-bundle",
-            "version": "1.4.1",
+            "version": "1.4.x-dev",
             "target-dir": "Propel/PropelBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/propelorm/PropelBundle.git",
-                "reference": "8d60937f84b8df035d376398fcc2ffbaf3be5298"
+                "url": "https://github.com/opichon/PropelBundle.git",
+                "reference": "a5eb12d613f22aaba1c76367b969cb7f158e3203"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propelorm/PropelBundle/zipball/8d60937f84b8df035d376398fcc2ffbaf3be5298",
-                "reference": "8d60937f84b8df035d376398fcc2ffbaf3be5298",
+                "url": "https://api.github.com/repos/opichon/PropelBundle/zipball/a5eb12d613f22aaba1c76367b969cb7f158e3203",
+                "reference": "a5eb12d613f22aaba1c76367b969cb7f158e3203",
                 "shasum": ""
             },
             "require": {
@@ -1048,15 +1041,13 @@
                     "Propel\\PropelBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "William Durand",
-                    "email": "william.durand1@gmail.com",
-                    "homepage": "http://www.willdurand.fr"
+                    "email": "william.durand1@gmail.com"
                 }
             ],
             "description": "Integration of Propel in Symfony2",
@@ -1065,7 +1056,10 @@
                 "persistence",
                 "propel"
             ],
-            "time": "2014-01-07 06:46:07"
+            "support": {
+                "source": "https://github.com/opichon/PropelBundle/tree/1.4"
+            },
+            "time": "2014-09-27 05:22:01"
         },
         {
             "name": "propel/propel1",
@@ -1863,6 +1857,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "propel/propel-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
         "cp/terms-bundle": 20
     },
