@@ -6,7 +6,11 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
-     "repositories": [
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis.united-asian.com/terms"
+        },
         {
             "type": "vcs",
             "url": "https://github.com/opichon/PropelBundle.git"
@@ -27,7 +31,7 @@
         "willdurand/propel-typehintable-behavior": "~1.0",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "lunetics/locale-bundle": "~2.2",
-        "cp/terms-bundle": "dev-develop"
+        "cp/terms-bundle": "dev-jquery-sortable"
     },
     "scripts": {
         "post-install-cmd": [

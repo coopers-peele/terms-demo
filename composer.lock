@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7b4dd236100236c540742bb63e858d3e",
+    "hash": "ee74180294d1a454e2a3dd468cfe3700",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -112,27 +112,22 @@
         },
         {
             "name": "cp/terms-bundle",
-            "version": "dev-develop",
+            "version": "dev-jquery-sortable",
+            "target-dir": "CP/Bundle/TermsBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/coopers-peele/CPTermsBundle.git",
-                "reference": "f8448885e5de4ce7636caf1371c2b364809c0678"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/f8448885e5de4ce7636caf1371c2b364809c0678",
-                "reference": "f8448885e5de4ce7636caf1371c2b364809c0678",
-                "shasum": ""
+                "url": "git@gitlab.united-asian.com:terms/terms-bundle",
+                "reference": "bbfe1c30a1f0795a5fa446d36be433563d86db8c"
             },
             "require": {
                 "cebe/markdown": "*",
-                "cogpowered/finediff": "~0.3",
+                "cogpowered/finediff": "0.3.*",
                 "dzango/twig-truncate-extension": "~1.0",
                 "php": ">=5.3.3",
-                "propel/propel-bundle": "~1.4@dev",
+                "propel/propel-bundle": "~1.4",
                 "sensio/framework-extra-bundle": "~3.0",
                 "symfony/framework-bundle": "~2.0",
-                "willdurand/propel-typehintable-behavior": "~1.0"
+                "willdurand/propel-typehintable-behavior": "1.0.*"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -141,11 +136,10 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "CP\\Bundle\\TermsBundle\\": ""
+                "psr-0": {
+                    "CP\\Bundle\\TermsBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -166,7 +160,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-09-27 13:48:03"
+            "time": "2014-09-29 07:05:48"
         },
         {
             "name": "doctrine/annotations",
