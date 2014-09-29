@@ -7,9 +7,13 @@
         "psr-0": { "": "src/" }
     },
     "repositories": [
+		{
+			"type": "composer",
+			"url": "http://satis.united-asian.com/terms"
+		},
         {
-            "type": "composer",
-            "url": "http://satis.united-asian.com/terms"
+            "type": "vcs",
+            "url": "https://github.com/opichon/PropelBundle.git"
         }
     ],
     "require": {
@@ -19,16 +23,15 @@
         "symfony/assetic-bundle": "~2.3",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
-        "sensio/distribution-bundle": "~2.3",
+        "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
-        "sensio/generator-bundle": "~2.3",
+        "sensio/generator-bundle": "~2.4@dev",
         "incenteev/composer-parameter-handler": "~2.0",
-        "propel/propel-bundle": "~1.4",
-        "willdurand/propel-typehintable-behavior": "1.0.*",
-        "friendsofsymfony/user-bundle": "2.0.*@dev",
-        "lunetics/locale-bundle": "2.2.*",
+        "propel/propel-bundle": "~1.4@dev",
+        "willdurand/propel-typehintable-behavior": "~1.0",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "lunetics/locale-bundle": "~2.2",
         "cp/terms-bundle": "dev-jquery-sortable"
-
     },
     "scripts": {
         "post-install-cmd": [
