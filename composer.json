@@ -21,12 +21,12 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
-        "sensio/generator-bundle": "~3.0",
+        "sensio/generator-bundle": "~2.4@dev",
         "incenteev/composer-parameter-handler": "~2.0",
         "propel/propel-bundle": "~1.4@dev",
         "willdurand/propel-typehintable-behavior": "~1.0",
-        "friendsofsymfony/user-bundle": "2.0.*@dev",
-        "lunetics/locale-bundle": "2.2.*",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "lunetics/locale-bundle": "~2.2",
         "cp/terms-bundle": "dev-develop"
     },
     "scripts": {
