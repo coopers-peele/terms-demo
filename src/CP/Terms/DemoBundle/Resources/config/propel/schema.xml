@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<database name="default" namespace="FOS\UserBundle\Propel" defaultIdMethod="native" package="vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Propel/">
-
+<database name="default" namespace="FOS\UserBundle\Propel" defaultIdMethod="native" package="vendor/friendsofsymfony/user-bundle/Propel/">
     <table name="fos_user" phpName="User">
         <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
         <column name="username" type="varchar" size="255" primaryString="true" />
