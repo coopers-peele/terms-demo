@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c6bbd4d36bf9dafe47bc3fbc219abb7b",
+    "hash": "c344ff41a7c24cf9c08517540bb5b409",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -120,16 +120,15 @@
         {
             "name": "cp/terms-bundle",
             "version": "dev-master",
-            "target-dir": "CP/Bundle/TermsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coopers-peele/CPTermsBundle.git",
-                "reference": "2ca8899c20c09ab035766064b379173464e5fe05"
+                "reference": "ef5dad1278d5a8a8aafda15be70267bffe32531d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/2ca8899c20c09ab035766064b379173464e5fe05",
-                "reference": "2ca8899c20c09ab035766064b379173464e5fe05",
+                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/ef5dad1278d5a8a8aafda15be70267bffe32531d",
+                "reference": "ef5dad1278d5a8a8aafda15be70267bffe32531d",
                 "shasum": ""
             },
             "require": {
@@ -145,12 +144,12 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.9.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "CP\\Bundle\\TermsBundle": ""
+                "psr-4": {
+                    "CP\\Bundle\\TermsBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -174,7 +173,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-10-08 06:24:17"
+            "time": "2014-10-12 15:13:57"
         },
         {
             "name": "doctrine/annotations",
