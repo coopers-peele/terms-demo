@@ -6,16 +6,6 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://satis.united-asian.com/terms"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/opichon/PropelBundle.git"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "~2.4",
