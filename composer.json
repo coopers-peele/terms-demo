@@ -27,7 +27,7 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.4@dev",
         "incenteev/composer-parameter-handler": "~2.0",
-        "propel/propel-bundle": "~1.4@dev",
+        "propel/propel-bundle": "~1.4",
         "willdurand/propel-typehintable-behavior": "~1.0",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "lunetics/locale-bundle": "~2.2",
