@@ -26,7 +26,6 @@ class UserAdminController extends Controller
      */
     public function indexAction(Request $request)
     {
-                print_r($this->getUser());die();
         $form = $this->createForm(new UsersFilterType());
 
         return array(
