@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: @CPTermsBundle/Resources/config/config.yml }
+    - { resource: @GlorpenPropelBundle/Resources/config/config.yml }
 
 framework:
     csrf_protection:            ~
@@ -125,3 +126,7 @@ cp_terms:
     #    service: cp_terms.markdown.parser.standard
     diff:
         theme: 'bundles/cptermsdemo/css/diff.css'
+
+glorpen_propel:
+  extended_models:
+    FOS\UserBundle\Propel\User: CP\Terms\DemoBundle\Model\User

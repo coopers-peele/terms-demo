@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c344ff41a7c24cf9c08517540bb5b409",
+    "hash": "010f8f67e7cdfd6bba4747c976401019",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -688,6 +688,47 @@
                 "User management"
             ],
             "time": "2014-10-10 08:00:05"
+        },
+        {
+            "name": "glorpen/propel-bundle",
+            "version": "dev-default",
+            "target-dir": "Glorpen/Propel/PropelBundle",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/glorpen/glorpenpropelbundle",
+                "reference": "c80ecd31d92380533c66b371f1fcbe700c7a6a60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/glorpen/glorpenpropelbundle/get/c80ecd31d92380533c66b371f1fcbe700c7a6a60.zip",
+                "reference": "c80ecd31d92380533c66b371f1fcbe700c7a6a60",
+                "shasum": ""
+            },
+            "require": {
+                "propel/propel-bundle": "1.*",
+                "symfony/symfony": "<3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "propel/propel-bundle": ">=1.4.4"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Glorpen\\Propel\\PropelBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Arkadiusz Dzięgiel"
+                }
+            ],
+            "description": "Propel events and model extending for Symfony2.",
+            "time": "2014-10-10 22:08:08"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1429,39 +1470,41 @@
         },
         {
             "name": "symfony/assetic-bundle",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "c07c0e500fe255ac0211eea9d0446c139f12da9c"
+                "reference": "90ea7fb66d6d5245fd4afc16e4c8070214254fec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/c07c0e500fe255ac0211eea9d0446c139f12da9c",
-                "reference": "c07c0e500fe255ac0211eea9d0446c139f12da9c",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/90ea7fb66d6d5245fd4afc16e4c8070214254fec",
+                "reference": "90ea7fb66d6d5245fd4afc16e4c8070214254fec",
                 "shasum": ""
             },
             "require": {
                 "kriswallsmith/assetic": "~1.2",
                 "php": ">=5.3.0",
-                "symfony/framework-bundle": "~2.1"
-            },
-            "require-dev": {
-                "symfony/class-loader": "~2.1",
                 "symfony/console": "~2.1",
-                "symfony/css-selector": "~2.1",
-                "symfony/dom-crawler": "~2.1",
-                "symfony/twig-bundle": "~2.1",
+                "symfony/framework-bundle": "~2.1",
                 "symfony/yaml": "~2.1"
             },
-            "suggest": {
-                "kriswallsmith/spork": "v0.2",
+            "require-dev": {
+                "kriswallsmith/spork": "~0.2",
+                "patchwork/jsqueeze": "~1.0",
+                "symfony/class-loader": "~2.1",
+                "symfony/css-selector": "~2.1",
+                "symfony/dom-crawler": "~2.1",
                 "symfony/twig-bundle": "~2.1"
+            },
+            "suggest": {
+                "kriswallsmith/spork": "to be able to dump assets in parallel",
+                "symfony/twig-bundle": "to use the Twig integration"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -1487,7 +1530,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-09-03 23:37:07"
+            "time": "2014-10-15 12:03:38"
         },
         {
             "name": "symfony/icu",
@@ -1922,6 +1965,7 @@
     "stability-flags": {
         "sensio/generator-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
+        "glorpen/propel-bundle": 20,
         "cp/terms-bundle": 20
     },
     "prefer-stable": false,

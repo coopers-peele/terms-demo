@@ -17,6 +17,7 @@ class AppKernel extends Kernel
             new Propel\PropelBundle\PropelBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Glorpen\Propel\PropelBundle\GlorpenPropelBundle(),
 //            new Dzango\Bundle\TwigTruncateBundle\TwigTruncateBundle(),
             new CP\Bundle\TermsBundle\CPTermsBundle(),
             new CP\Terms\DemoBundle\CPTermsDemoBundle()
