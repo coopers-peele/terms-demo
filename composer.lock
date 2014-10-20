@@ -123,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coopers-peele/CPTermsBundle.git",
-                "reference": "bef0e61faded4c8bc77e6051eba2334533152e27"
+                "reference": "fd6a9353395048bc24519d870b1d34e9e3614b04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/bef0e61faded4c8bc77e6051eba2334533152e27",
-                "reference": "bef0e61faded4c8bc77e6051eba2334533152e27",
+                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/fd6a9353395048bc24519d870b1d34e9e3614b04",
+                "reference": "fd6a9353395048bc24519d870b1d34e9e3614b04",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-10-16 05:22:34"
+            "time": "2014-10-20 09:14:14"
         },
         {
             "name": "doctrine/annotations",
@@ -628,12 +628,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "cac56e025c1d2d1fe5acb644e4cafe0830f17150"
+                "reference": "9714a92e968f7e12431ccf5fecb1346f0d5adc65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/cac56e025c1d2d1fe5acb644e4cafe0830f17150",
-                "reference": "cac56e025c1d2d1fe5acb644e4cafe0830f17150",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/9714a92e968f7e12431ccf5fecb1346f0d5adc65",
+                "reference": "9714a92e968f7e12431ccf5fecb1346f0d5adc65",
                 "shasum": ""
             },
             "require": {
@@ -687,7 +687,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2014-10-10 08:00:05"
+            "time": "2014-10-20 09:15:23"
         },
         {
             "name": "incenteev/composer-parameter-handler",
