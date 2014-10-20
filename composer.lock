@@ -123,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coopers-peele/CPTermsBundle.git",
-                "reference": "ef5dad1278d5a8a8aafda15be70267bffe32531d"
+                "reference": "bef0e61faded4c8bc77e6051eba2334533152e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/ef5dad1278d5a8a8aafda15be70267bffe32531d",
-                "reference": "ef5dad1278d5a8a8aafda15be70267bffe32531d",
+                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/bef0e61faded4c8bc77e6051eba2334533152e27",
+                "reference": "bef0e61faded4c8bc77e6051eba2334533152e27",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-10-12 15:13:57"
+            "time": "2014-10-16 05:22:34"
         },
         {
             "name": "doctrine/annotations",
@@ -1820,16 +1820,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.16.1",
+            "version": "v1.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec"
+                "reference": "42f758d9fe2146d1f0470604fc05ee43580873fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7c4c01dcf578523cfcddf383641a4f12790270ec",
-                "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/42f758d9fe2146d1f0470604fc05ee43580873fc",
+                "reference": "42f758d9fe2146d1f0470604fc05ee43580873fc",
                 "shasum": ""
             },
             "require": {
@@ -1873,7 +1873,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-10-10 14:09:53"
+            "time": "2014-10-17 12:53:44"
         },
         {
             "name": "willdurand/propel-typehintable-behavior",
