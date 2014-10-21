@@ -19,7 +19,8 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
 //            new Dzango\Bundle\TwigTruncateBundle\TwigTruncateBundle(),
             new CP\Bundle\TermsBundle\CPTermsBundle(),
-            new CP\Terms\DemoBundle\CPTermsDemoBundle()
+            new CP\Terms\DemoBundle\CPTermsDemoBundle(),
+            new CP\Terms\UserBundle\CPTermsUserBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
