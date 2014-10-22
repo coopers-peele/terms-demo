@@ -123,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coopers-peele/CPTermsBundle.git",
-                "reference": "fd6a9353395048bc24519d870b1d34e9e3614b04"
+                "reference": "5c782dfe2169adcb44960fbe5199eefe18a618f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/fd6a9353395048bc24519d870b1d34e9e3614b04",
-                "reference": "fd6a9353395048bc24519d870b1d34e9e3614b04",
+                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/5c782dfe2169adcb44960fbe5199eefe18a618f2",
+                "reference": "5c782dfe2169adcb44960fbe5199eefe18a618f2",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-10-20 09:14:14"
+            "time": "2014-10-21 07:57:49"
         },
         {
             "name": "doctrine/annotations",
