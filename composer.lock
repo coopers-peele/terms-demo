@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c344ff41a7c24cf9c08517540bb5b409",
+    "hash": "977ace4125c175db9f6f2f910571836f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -122,14 +122,8 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/coopers-peele/CPTermsBundle.git",
-                "reference": "5c782dfe2169adcb44960fbe5199eefe18a618f2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/coopers-peele/CPTermsBundle/zipball/5c782dfe2169adcb44960fbe5199eefe18a618f2",
-                "reference": "5c782dfe2169adcb44960fbe5199eefe18a618f2",
-                "shasum": ""
+                "url": "git@gitlab.united-asian.com:terms/terms-bundle",
+                "reference": "371b06f866185041d2835a1533a7e188b810309d"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -152,7 +146,6 @@
                     "CP\\Bundle\\TermsBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -173,7 +166,7 @@
                 "terms of service",
                 "tos"
             ],
-            "time": "2014-10-21 07:57:49"
+            "time": "2014-10-22 04:26:30"
         },
         {
             "name": "doctrine/annotations",
