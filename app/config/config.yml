@@ -118,7 +118,7 @@ cp_terms:
     # date_format:    dd MMM yy hh:mm
     entity_finder:
         enabled: true
-        #service: cp_terms.entity_finder.fos_user.propel
+        service: cp_terms.entity_finder.profile
     # agreement:
     #    show_diff: true
     # markdown:
