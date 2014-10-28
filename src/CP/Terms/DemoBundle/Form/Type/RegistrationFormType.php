@@ -2,7 +2,7 @@
 
 namespace CP\Terms\DemoBundle\Form\Type;
 
-use CP\Terms\UserBundle\Form\Type\ProfileFormType;
+use CP\Terms\UserBundle\Form\Type\ProfileRegistrationFormType;
 
 use FOS\UserBundle\Form\Type\RegistrationFormType as BaseType;
 
@@ -60,7 +60,7 @@ class RegistrationFormType extends BaseType
 
         $builder->add(
             'profile',
-            new ProfileFormType(),
+            new ProfileRegistrationFormType(),
             array(
                 'label' => FALSE
             )

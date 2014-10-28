@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class ProfileFormType extends AbstractType
+class ProfileRegistrationFormType extends AbstractType
 {
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
