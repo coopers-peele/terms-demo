@@ -89,7 +89,9 @@ class UserAdminController extends Controller
     protected function getQuery()
     {
         return UserQuery::create()
-            ->leftJoinAgreement()
+            ->useProfileQuery()
+                ->leftJoinAgreement()
+            ->endUse()
             ->distinct();
     }
 
