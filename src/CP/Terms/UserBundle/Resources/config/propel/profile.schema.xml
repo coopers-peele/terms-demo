@@ -5,6 +5,7 @@
         <column name="gender" type="tinyint" size="1" />
         <column name="surname" type="varchar" size="100" />
         <column name="given_names" type="varchar" size="100" />
+        <column name="dob" type="date" />
         <foreign-key foreignTable="fos_user" name="FI_profile_user">
             <reference local="user_id" foreign="id"/>
         </foreign-key>
