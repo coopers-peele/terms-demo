@@ -1,29 +1,17 @@
 <?php
 
-namespace CP\Terms\DemoBundle\Form\Type;
+namespace CP\Terms\UserBundle\Form\Type;
 
-use FOS\UserBundle\Form\Type\RegistrationFormType as BaseType;
-
+use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class RegistrationFormType extends BaseType
+class ProfileFormType extends AbstractType
 {
-    protected $class;
-
-    /**
-     * @param string $class The User class name
-     */
-    public function __construct($class)
-    {
-        $this->class = $class;
-    }
-
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => $this->class,
-            'translation_domain' => 'FOSUserBundle',
+            'data_class' => 'CP\Terms\UserBundle\Model\Profile',
             'intention' => 'registration',
             'cascade_validation' => true
         ));
@@ -35,28 +23,6 @@ class RegistrationFormType extends BaseType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add(
-            'username',
-            'text',
-            array(
-                'label' => 'form.username',
-                'attr' => array(
-                    'class' => 'form-control'
-                )
-            )
-        );
-
-        $builder->add(
-            'plainPassword',
-            'repeated',
-            array(
-                'type' => 'password',
-                'first_options' => array('label' => 'form.password','attr' => array('class' => 'form-control')),
-                'second_options' => array('label' => 'form.password_confirmation','attr' => array('class' => 'form-control')),
-                'invalid_message' => 'fos_user.password.mismatch'
-            )
-        );
-
-        $builder->add(
             'agreement_for_latest_terms',
             'cp_terms_agreement',
             array(
@@ -67,6 +33,6 @@ class RegistrationFormType extends BaseType
 
     public function getName()
     {
-        return 'admin_user_registration';
+        return 'user_profile';
     }
 }
