@@ -14,8 +14,8 @@
 				"DT_RowClass": "{{ 'user' }}",
 				"username": "{{ user.username }}",
 				"last_login": "{{ user.lastLogin|date(datetime_format) }}",
-				"tos": "{{ user.lastAgreedTerms ? user.lastAgreedTerms.version : ''  }}",
-				"agreed_on": "{{ user.lastAgreedTerms ? user.lastAgreedTerms.getAgreedAt()|date(datetime_format) : '' }}",
+				"tos": "{{ user.profile.lastAgreedTerms ? user.profile.lastAgreedTerms.version : ''  }}",
+				"agreed_on": "{{ user.profile.lastAgreedTerms ? user.profile.lastAgreedTerms.getAgreedAt()|date(datetime_format) : '' }}",
 				"actions": "{% include 'CPTermsDemoBundle:UserAdmin:users_actions.html.twig' %}"
 			}{% if not loop.last %},{% endif %}
 		{% endfor %}
