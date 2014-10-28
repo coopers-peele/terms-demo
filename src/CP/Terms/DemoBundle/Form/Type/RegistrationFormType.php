@@ -2,6 +2,8 @@
 
 namespace CP\Terms\DemoBundle\Form\Type;
 
+use CP\Terms\UserBundle\Form\Type\ProfileFormType;
+
 use FOS\UserBundle\Form\Type\RegistrationFormType as BaseType;
 
 use Symfony\Component\Form\FormBuilderInterface;
@@ -57,10 +59,10 @@ class RegistrationFormType extends BaseType
         );
 
         $builder->add(
-            'agreement_for_latest_terms',
-            'cp_terms_agreement',
+            'profile',
+            new ProfileFormType(),
             array(
-                'label' => false
+                'label' => FALSE
             )
         );
     }
