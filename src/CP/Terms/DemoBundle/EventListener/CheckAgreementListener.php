@@ -51,7 +51,7 @@ class CheckAgreementListener
 
             $user = $this->context->getToken()->getUser();
 
-            if (!$user->hasAgreedToLatestTerms()) {
+            if (!$user->getProfile()->hasAgreedToLatestTerms()) {
                 throw new TermsNotAgreedException('You must agree to latest terms.');
             }
         }
